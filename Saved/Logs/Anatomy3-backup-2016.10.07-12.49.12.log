@@ -1,0 +1,1438 @@
+﻿Log file open, 09/30/16 13:08:41
+LogInit:Display: Running engine for game: Anatomy3
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(823626979) SRandInit(823626980).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.072612
+LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 1.3.2
+LogInit: Version: 4.12.2-3005592+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3005592
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jun  8 2016 08:57:49
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.09.30-12.08.41:400][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.30-12.08.41:400][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.09.30-12.08.41:454][  0]LogInit: Computer: MC10754
+[2016.09.30-12.08.41:454][  0]LogInit: User: 1401292
+[2016.09.30-12.08.41:454][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.09.30-12.08.41:454][  0]LogInit: High frequency timer resolution =3.118037 MHz
+[2016.09.30-12.08.41:454][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2016.09.30-12.08.41:454][  0]LogMemory: Platform Memory Stats for Windows
+[2016.09.30-12.08.41:454][  0]LogMemory: Process Physical Memory: 190.31 MB used, 190.31 MB peak
+[2016.09.30-12.08.41:454][  0]LogMemory: Process Virtual Memory: 195.95 MB used, 195.95 MB peak
+[2016.09.30-12.08.41:454][  0]LogMemory: Physical Memory: 2866.89 MB used, 8134.95 MB total
+[2016.09.30-12.08.41:454][  0]LogMemory: Virtual Memory: 538.11 MB used, 8388608.00 MB total
+[2016.09.30-12.08.41:544][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.09.30-12.08.42:423][  0]LogD3D11RHI: D3D11 adapters:
+[2016.09.30-12.08.42:439][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 750 Ti' (Feature Level 11_0)
+[2016.09.30-12.08.42:439][  0]LogD3D11RHI:       1993/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.09.30-12.08.42:439][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.09.30-12.08.42:443][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.09.30-12.08.42:443][  0]LogD3D11RHI:     GPU DeviceId: 0x1380 (for the marketing name, search the web for "GPU Device Id")
+[2016.09.30-12.08.42:443][  0]LogWindows: EnumDisplayDevices:
+[2016.09.30-12.08.42:443][  0]LogWindows:    0. 'NVIDIA GeForce GTX 750 Ti' (P:1 D:1)
+[2016.09.30-12.08.42:443][  0]LogWindows:    1. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2016.09.30-12.08.42:444][  0]LogWindows:    2. 'NVIDIA GeForce GTX 750 Ti' (P:0 D:0)
+[2016.09.30-12.08.42:444][  0]LogWindows:    3. 'RDPDD Chained DD' (P:0 D:0)
+[2016.09.30-12.08.42:444][  0]LogWindows:    4. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.09.30-12.08.42:444][  0]LogWindows:    5. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.09.30-12.08.42:444][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:3 
+[2016.09.30-12.08.42:444][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 750 Ti
+[2016.09.30-12.08.42:444][  0]LogD3D11RHI:   Driver Version: 355.82 (internal:10.18.13.5582, unified:355.82)
+[2016.09.30-12.08.42:444][  0]LogD3D11RHI:      Driver Date: 8-25-2015
+[2016.09.30-12.08.42:444][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.09.30-12.08.42:456][  0]LogD3D11RHI: Async texture creation enabled
+[2016.09.30-12.08.42:471][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.09.30-12.08.42:471][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Intermediate/Shaders/WorkingDirectory/4436/).
+[2016.09.30-12.08.42:471][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/1401292/AppData/Local/Temp/UnrealShaderWorkingDir/FF481D60404A67818E4589A6C02F3D22/'.
+[2016.09.30-12.08.42:471][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.09.30-12.08.44:287][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.09.30-12.08.44:303][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.09.30-12.08.44:315][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.09.30-12.08.44:328][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.09.30-12.08.44:340][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.09.30-12.08.44:351][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.09.30-12.08.44:362][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.09.30-12.08.45:125][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.09.30-12.08.45:142][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.09.30-12.08.45:154][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.09.30-12.08.45:164][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.09.30-12.08.45:186][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.09.30-12.08.45:186][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.09.30-12.08.45:187][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.09.30-12.08.45:211][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.09.30-12.08.45:221][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.09.30-12.08.45:232][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.09.30-12.08.45:242][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.09.30-12.08.45:253][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.09.30-12.08.45:253][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.09.30-12.08.45:329][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.09.30-12.08.45:382][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/1401292/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.09.30-12.08.45:383][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/1401292/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.09.30-12.08.45:385][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.09.30-12.08.45:385][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.09.30-12.08.45:387][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.09.30-12.08.45:388][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.09.30-12.08.45:404][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.09.30-12.08.45:416][  0]LogDerivedDataCache: Using Local data cache path C:/Users/1401292/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.09.30-12.08.45:624][  0]LogInit: Selected Device Profile: [Windows]
+[2016.09.30-12.08.45:625][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.09.30-12.08.46:397][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.09.30-12.08.46:397][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.09.30-12.08.46:397][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.09.30-12.08.46:658][  0]LogAssetRegistry: FAssetRegistry took 0.0205 seconds to start up
+[2016.09.30-12.08.47:528][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.287461 seconds
+[2016.09.30-12.08.47:534][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.09.30-12.08.47:534][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.09.30-12.08.47:534][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.09.30-12.08.47:540][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.09.30-12.08.47:718][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.30-12.08.47:718][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.09.30-12.08.49:466][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.09.30-12.08.50:983][  0]SourceControl: Info Source control is disabled
+[2016.09.30-12.08.51:010][  0]SourceControl: Info Source control is disabled
+[2016.09.30-12.08.51:066][  0]SourceControl: Info Source control is disabled
+[2016.09.30-12.08.51:091][  0]SourceControl: Info Source control is disabled
+[2016.09.30-12.08.51:459][  0]LogEngine: Initializing Engine...
+[2016.09.30-12.08.51:460][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.09.30-12.08.51:461][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.09.30-12.08.52:618][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.09.30-12.08.52:629][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.08.52:671][  0]LogInit: FAudioDevice initialized.
+[2016.09.30-12.08.52:713][  0]LogDerivedDataCache: Saved boot cache 0.04s 48MB C:/Users/1401292/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.09.30-12.08.52:720][  0]LogInit: Texture streaming: Enabled
+[2016.09.30-12.08.52:762][  0]LogInit: Transaction tracking system initialized
+[2016.09.30-12.08.52:859][  0]BlueprintLog: New page: Editor Load
+[2016.09.30-12.08.53:206][  0]LocalizationService: Info Localization service is disabled
+[2016.09.30-12.08.53:804][  0]LogConsoleResponse:Display: 
+[2016.09.30-12.08.53:930][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.09.30-12.08.53:930][  0]LogCook:Display: Mobile HDR setting 1
+[2016.09.30-12.08.54:235][  0]LogFileCache: Scanning file cache for directory 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/' took 0.19s
+[2016.09.30-12.08.54:235][  0]SourceControl: Info Source control is disabled
+[2016.09.30-12.08.54:235][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.30-12.08.54:235][  0]LightingResults: New page: Lighting Build
+[2016.09.30-12.08.54:241][  0]MapCheck: New page: Map Check
+[2016.09.30-12.08.54:241][  0]LightingResults: New page: Lighting Build
+[2016.09.30-12.08.54:519][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2016.09.30-12.08.54:570][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.30-12.08.54:581][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.30-12.08.54:641][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 59.659ms to complete.
+[2016.09.30-12.08.54:641][  0]LogFileHelpers: Loading map 'Template_Default' took 0.406
+[2016.09.30-12.08.55:198][  0]LogCollectionManager: Loaded 0 collections in 0.007889 seconds
+[2016.09.30-12.08.55:383][  0]LogFileCache: Scanning file cache for directory 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Collections/' took 0.01s
+[2016.09.30-12.08.55:383][  0]LogFileCache: Scanning file cache for directory 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Developers/1401292/Collections/' took 0.01s
+[2016.09.30-12.08.55:383][  0]LogFileCache: Scanning file cache for directory 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Collections/' took 0.01s
+[2016.09.30-12.08.55:383][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2016.09.30-12.08.55:400][  0]LogContentBrowser: Native class hierarchy populated in 0.0163 seconds. Added 2047 classes and 369 folders.
+[2016.09.30-12.08.55:404][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.09.30-12.08.55:404][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.09.30-12.08.55:405][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0012 seconds. Added 12 classes and 0 folders.
+[2016.09.30-12.08.55:410][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2016.09.30-12.08.55:483][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0012 seconds. Added 0 classes and 0 folders.
+[2016.09.30-12.08.55:488][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0011 seconds. Added 1 classes and 2 folders.
+[2016.09.30-12.08.56:254][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.09.30-12.08.57:310][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0016 seconds. Added 1 classes and 2 folders.
+[2016.09.30-12.08.57:310][  0]LogLoad: Full Startup: 25.12 seconds (BP compile: 0.04 seconds)
+[2016.09.30-12.08.57:311][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.09.30-12.08.57:311][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.09.30-12.08.57:320][  0]LogOcInput: OculusInput pre-init called
+[2016.09.30-12.08.57:321][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 1.3.2
+[2016.09.30-12.08.57:416][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.09.30-12.08.58:345][  0]LogRenderer: Reallocating scene render targets to support 1004x456 (Frame:2).
+[2016.09.30-12.08.59:218][  2]LogAssetRegistry: Asset discovery search completed in 12.5792 seconds
+[2016.09.30-12.08.59:218][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.09.30-12.08.59:218][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000034 seconds (updated 0 objects)
+[2016.09.30-12.09.12:041][406]Cmd: MAP LOAD FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/1_MM.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.30-12.09.12:061][406]LightingResults: New page: Lighting Build
+[2016.09.30-12.09.12:062][406]LoadErrors: New page: Loading map: 1_MM.umap
+[2016.09.30-12.09.12:066][406]MapCheck: New page: Map Check
+[2016.09.30-12.09.12:066][406]LightingResults: New page: Lighting Build
+[2016.09.30-12.09.12:130][406]LogTexture:Display: Building textures: 1_Main_menu (AutoDXT)
+[2016.09.30-12.09.12:374][406]LogAIModule: Creating AISystem for world 1_MM
+[2016.09.30-12.09.12:378][406]PIE:Warning: Warning AttachTo: '/Game/Scenes/1_MM.1_MM:PersistentLevel.CameraActor_1.SceneComponent' cannot be attached to itself. Aborting.
+[2016.09.30-12.09.12:405][406]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.30-12.09.12:480][406]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.30-12.09.12:591][406]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 110.776ms to complete.
+[2016.09.30-12.09.12:591][406]LogFileHelpers: Loading map '1_MM' took 0.550
+[2016.09.30-12.09.20:374][239]Cmd: MAP LOAD FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.09.30-12.09.20:394][239]LightingResults: New page: Lighting Build
+[2016.09.30-12.09.20:395][239]LoadErrors: New page: Loading map: 3_IA.umap
+[2016.09.30-12.09.20:396][239]MapCheck: New page: Map Check
+[2016.09.30-12.09.20:396][239]LightingResults: New page: Lighting Build
+[2016.09.30-12.09.20:602][239]LogStaticMesh: Building static mesh 10_Aortic_valve...
+[2016.09.30-12.09.20:847][239]LogStaticMesh: Built static mesh [0.25s] /Game/Imports/Heart_MRI_parts/10_Aortic_valve.10_Aortic_valve
+[2016.09.30-12.09.20:902][239]LogStaticMesh: Building static mesh 11_Descending_aorta...
+[2016.09.30-12.09.21:004][239]LogStaticMesh: Built static mesh [0.10s] /Game/Imports/Heart_MRI_parts/11_Descending_aorta.11_Descending_aorta
+[2016.09.30-12.09.21:050][239]LogStaticMesh: Building static mesh 12_SVC...
+[2016.09.30-12.09.21:154][239]LogStaticMesh: Built static mesh [0.10s] /Game/Imports/Heart_MRI_parts/12_SVC.12_SVC
+[2016.09.30-12.09.21:175][239]LogStaticMesh: Building static mesh 13_IVC...
+[2016.09.30-12.09.21:265][239]LogStaticMesh: Built static mesh [0.09s] /Game/Imports/Heart_MRI_parts/13_IVC.13_IVC
+[2016.09.30-12.09.21:285][239]LogStaticMesh: Building static mesh 14_Pulmonary_trunk...
+[2016.09.30-12.09.21:456][239]LogStaticMesh: Built static mesh [0.17s] /Game/Imports/Heart_MRI_parts/14_Pulmonary_trunk.14_Pulmonary_trunk
+[2016.09.30-12.09.21:494][239]LogStaticMesh: Building static mesh 2_Wall...
+[2016.09.30-12.09.23:285][239]LogStaticMesh: Built static mesh [1.79s] /Game/Imports/Heart_MRI_parts/2_Wall.2_Wall
+[2016.09.30-12.09.23:827][239]LogStaticMesh: Building static mesh 3_Right_atrium...
+[2016.09.30-12.09.23:907][239]LogStaticMesh: Built static mesh [0.08s] /Game/Imports/Heart_MRI_parts/3_Right_atrium.3_Right_atrium
+[2016.09.30-12.09.23:923][239]LogStaticMesh: Building static mesh 4_Right_auricle...
+[2016.09.30-12.09.24:025][239]LogStaticMesh: Built static mesh [0.10s] /Game/Imports/Heart_MRI_parts/4_Right_auricle.4_Right_auricle
+[2016.09.30-12.09.24:047][239]LogStaticMesh: Building static mesh 5_Right_ventricle...
+[2016.09.30-12.09.24:157][239]LogStaticMesh: Built static mesh [0.11s] /Game/Imports/Heart_MRI_parts/5_Right_ventricle.5_Right_ventricle
+[2016.09.30-12.09.24:181][239]LogStaticMesh: Building static mesh 6_Left_ventricle...
+[2016.09.30-12.09.24:288][239]LogStaticMesh: Built static mesh [0.11s] /Game/Imports/Heart_MRI_parts/6_Left_ventricle.6_Left_ventricle
+[2016.09.30-12.09.24:311][239]LogStaticMesh: Building static mesh 7_Left_atrium...
+[2016.09.30-12.09.24:394][239]LogStaticMesh: Built static mesh [0.08s] /Game/Imports/Heart_MRI_parts/7_Left_atrium.7_Left_atrium
+[2016.09.30-12.09.24:412][239]LogStaticMesh: Building static mesh 8_Left_auricle...
+[2016.09.30-12.09.24:509][239]LogStaticMesh: Built static mesh [0.10s] /Game/Imports/Heart_MRI_parts/8_Left_auricle.8_Left_auricle
+[2016.09.30-12.09.24:530][239]LogStaticMesh: Building static mesh 9_Ascending_aorta...
+[2016.09.30-12.09.24:615][239]LogStaticMesh: Built static mesh [0.09s] /Game/Imports/Heart_MRI_parts/9_Ascending_aorta.9_Ascending_aorta
+[2016.09.30-12.09.24:678][239]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.09.24:795][239]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-12.09.24:812][239]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.09.24:813][239]PIE:Warning: Warning AttachTo: '/Game/Scenes/3_IA.3_IA:PersistentLevel.CameraActor_3.SceneComponent' cannot be attached to itself. Aborting.
+[2016.09.30-12.09.25:327][239]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.09.30-12.09.25:399][239]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.09.30-12.09.25:518][239]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 119.096ms to complete.
+[2016.09.30-12.09.25:518][239]LogFileHelpers: Loading map '3_IA' took 5.145
+[2016.09.30-12.09.32:465][625]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.09.35:055][821]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.10.55:673][884]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.11.20:298][302]LogEditorViewport: Clicking Background
+[2016.09.30-12.11.25:908][968]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.11.25:908][968]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.11.25:909][968]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:11:25)
+[2016.09.30-12.11.25:909][968]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.11.25:918][968]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008638s)
+[2016.09.30-12.11.25:918][968]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.11.25:918][968]LogPlayLevel: PIE: World Init took: (0.000868s)
+[2016.09.30-12.11.25:919][968]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009752s)
+[2016.09.30-12.11.25:939][968]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.11.25:957][968]LogInit: FAudioDevice initialized.
+[2016.09.30-12.11.26:025][968]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.11.26:035][968]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.11.26
+[2016.09.30-12.11.26:065][968]LogWorld: Bringing up level for play took: 0.038657
+[2016.09.30-12.11.26:805][968]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0017 seconds. Added 11 classes and 0 folders.
+[2016.09.30-12.11.26:837][968]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.092
+[2016.09.30-12.11.26:837][968]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.11.43:448][945]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.11.43:481][945]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.11.45:332][163]LogText:Warning: Failed to parse argument "GameModeName" as a number (using "0" as a fallback). Please check your format string for errors: "GameMode: {GameModeName}".
+[2016.09.30-12.11.47:979][344]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0027 seconds. Added 111 classes and 0 folders.
+[2016.09.30-12.12.55:172][886]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.14.56:919][168]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (9_Ascending_aorta)
+[2016.09.30-12.15.17:204][198]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.19.38:049][383]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.09.30-12.20.07:679][383]LogSavePackage: Save=29495.71ms
+[2016.09.30-12.20.07:679][383]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA_Auto12BB8AF4D4873B4C243A89DB772FFF882.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto1.umap'
+[2016.09.30-12.20.07:699][383]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto1.umap
+[2016.09.30-12.20.07:765][383]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Scenes/3_IA' took 29.830
+[2016.09.30-12.20.07:765][383]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 29.830
+[2016.09.30-12.27.16:180][849]LogRenderer: Reallocating scene render targets to support 1160x744 (Frame:36022).
+[2016.09.30-12.27.40:999][811]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.27.41:021][811]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.27.43:634][ 89]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.27.44:222][159]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.27.44:242][159]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.27.45:335][195]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.27.45:969][264]LogMaterial: 0.01 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.27.50:081][726]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.09.30-12.28.19:986][726]LogSavePackage: Save=29776.41ms
+[2016.09.30-12.28.19:986][726]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA3DF57F794D603015BE18A282296DBD58.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap'
+[2016.09.30-12.28.20:075][726]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap
+[2016.09.30-12.28.20:202][726]LogFileHelpers: Saving map '3_IA' took 30.256
+[2016.09.30-12.28.20:259][726]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/RedInstance" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset" SILENT=true
+[2016.09.30-12.28.20:431][726]LogSavePackage: Save=68.29ms
+[2016.09.30-12.28.20:432][726]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedInstanceC89D06294DA54DD494F86F95960E97DA.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset'
+[2016.09.30-12.28.20:520][726]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset
+[2016.09.30-12.28.24:880][150]LogEditorViewport: Clicking Background
+[2016.09.30-12.28.27:179][416]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.28.27:179][416]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.28.27:179][416]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:28:27)
+[2016.09.30-12.28.27:179][416]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.28.27:187][416]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007976s)
+[2016.09.30-12.28.27:188][416]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.28.27:188][416]LogPlayLevel: PIE: World Init took: (0.000702s)
+[2016.09.30-12.28.27:188][416]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008937s)
+[2016.09.30-12.28.27:209][416]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.28.27:240][416]LogInit: FAudioDevice initialized.
+[2016.09.30-12.28.27:308][416]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.28.28:069][416]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.28.28
+[2016.09.30-12.28.28:071][416]LogWorld: Bringing up level for play took: 0.760918
+[2016.09.30-12.28.28:078][416]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.314
+[2016.09.30-12.28.28:079][416]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.28.34:215][145]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.28.34:248][145]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.28.36:852][452]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.28.36:864][452]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.28.45:723][483]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.28.49:129][876]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/RedInstance" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset" SILENT=true
+[2016.09.30-12.28.49:249][876]LogSavePackage: Save=56.31ms
+[2016.09.30-12.28.49:249][876]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedInstanceD795C329481D2781BA8668BB454E0B8C.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset'
+[2016.09.30-12.28.49:323][876]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset
+[2016.09.30-12.28.53:309][287]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.28.53:309][287]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.28.53:310][287]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:28:53)
+[2016.09.30-12.28.53:310][287]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.28.53:318][287]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007956s)
+[2016.09.30-12.28.53:318][287]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.28.53:318][287]LogPlayLevel: PIE: World Init took: (0.000592s)
+[2016.09.30-12.28.53:318][287]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008726s)
+[2016.09.30-12.28.53:337][287]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.28.53:350][287]LogInit: FAudioDevice initialized.
+[2016.09.30-12.28.53:416][287]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.28.53:426][287]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.28.53
+[2016.09.30-12.28.53:427][287]LogWorld: Bringing up level for play took: 0.009885
+[2016.09.30-12.28.53:433][287]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.669
+[2016.09.30-12.28.53:433][287]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.11:628][468]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.15:848][973]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.16:557][ 57]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.17:075][118]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.23:204][851]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.29.23:249][851]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.29:354][426]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.29:405][426]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.30:211][515]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.30:211][515]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.29.30:212][515]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:29:30)
+[2016.09.30-12.29.30:212][515]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.29.30:227][515]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015262s)
+[2016.09.30-12.29.30:228][515]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.29.30:228][515]LogPlayLevel: PIE: World Init took: (0.001088s)
+[2016.09.30-12.29.30:229][515]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.016660s)
+[2016.09.30-12.29.30:254][515]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.29.30:291][515]LogInit: FAudioDevice initialized.
+[2016.09.30-12.29.30:365][515]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.29.30:375][515]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.29.30
+[2016.09.30-12.29.31:128][515]LogWorld: Bringing up level for play took: 0.761558
+[2016.09.30-12.29.31:136][515]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.373
+[2016.09.30-12.29.31:136][515]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.37:016][215]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.37:050][215]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.41:674][761]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.29.47:916][507]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.29.47:929][507]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.29.53:792][ 36]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.29.53:792][ 36]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.29.53:792][ 36]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:29:53)
+[2016.09.30-12.29.53:793][ 36]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.29.53:801][ 36]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008308s)
+[2016.09.30-12.29.53:801][ 36]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.29.53:802][ 36]LogPlayLevel: PIE: World Init took: (0.000651s)
+[2016.09.30-12.29.53:802][ 36]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009141s)
+[2016.09.30-12.29.53:819][ 36]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.29.53:849][ 36]LogInit: FAudioDevice initialized.
+[2016.09.30-12.29.53:902][ 36]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.29.53:912][ 36]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.29.53
+[2016.09.30-12.29.53:913][ 36]LogWorld: Bringing up level for play took: 0.010008
+[2016.09.30-12.29.53:918][ 36]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.844
+[2016.09.30-12.29.53:918][ 36]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.30.05:618][436]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.30.05:627][436]LogMaterial:Warning: Failed to compile Material Instance /Game/Materials/RedInstance.RedInstance with Base Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-12.30.05:627][436]LogMaterial:Warning: 	Dynamically lit translucency is not supported for BLEND_Modulate materials.
+[2016.09.30-12.30.05:627][436]LogMaterial:Warning: 	Separate translucency with BLEND_Modulate is not supported. Consider using BLEND_Translucent with black emissive
+[2016.09.30-12.30.05:629][436]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.30.05:629][436]LogMaterial:Warning: Failed to compile Material Instance /Game/Materials/RedInstance.RedInstance with Base Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-12.30.05:629][436]LogMaterial:Warning: 	Dynamically lit translucency is not supported for BLEND_Modulate materials.
+[2016.09.30-12.30.05:629][436]LogMaterial:Warning: 	Separate translucency with BLEND_Modulate is not supported. Consider using BLEND_Translucent with black emissive
+[2016.09.30-12.30.05:630][436]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.30.13:623][388]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.32.03:448][546]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.32.03:481][546]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.32.40:716][953]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.32.43:274][253]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.32.43:274][253]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.32.43:275][253]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:32:43)
+[2016.09.30-12.32.43:275][253]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.32.43:283][253]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008283s)
+[2016.09.30-12.32.43:284][253]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.32.43:284][253]LogPlayLevel: PIE: World Init took: (0.000669s)
+[2016.09.30-12.32.43:284][253]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009138s)
+[2016.09.30-12.32.43:301][253]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.32.43:326][253]LogInit: FAudioDevice initialized.
+[2016.09.30-12.32.43:377][253]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.32.43:387][253]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.32.43
+[2016.09.30-12.32.43:388][253]LogWorld: Bringing up level for play took: 0.009816
+[2016.09.30-12.32.43:393][253]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.634
+[2016.09.30-12.32.43:393][253]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.32.53:040][406]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.33.06:325][993]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.33.13:540][856]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.18:223][582]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.26:055][516]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.28:254][776]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.29:873][968]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.37:741][905]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.39:331][ 93]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.34.58:720][416]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.35.12:493][ 62]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.35.19:139][859]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.35.35:174][776]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.35.39:254][263]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.35.39:721][318]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.35.41:288][505]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.35.42:025][593]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.35.54:324][ 62]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.36.21:992][258]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.36.38:731][ 88]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.36.43:067][605]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.36.43:067][605]LogMaterial:Warning: Failed to compile Material Instance /Game/Materials/RedInstance.RedInstance with Base Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-12.36.43:067][605]LogMaterial:Warning: 	Dynamically lit translucency is not supported for BLEND_Modulate materials.
+[2016.09.30-12.36.43:067][605]LogMaterial:Warning: 	Separate translucency with BLEND_Modulate is not supported. Consider using BLEND_Translucent with black emissive
+[2016.09.30-12.36.43:070][605]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.36.43:070][605]LogMaterial:Warning: Failed to compile Material Instance /Game/Materials/RedInstance.RedInstance with Base Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-12.36.43:070][605]LogMaterial:Warning: 	Dynamically lit translucency is not supported for BLEND_Modulate materials.
+[2016.09.30-12.36.43:070][605]LogMaterial:Warning: 	Separate translucency with BLEND_Modulate is not supported. Consider using BLEND_Translucent with black emissive
+[2016.09.30-12.36.43:071][605]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.36.51:406][598]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.37.17:200][631]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.37.17:249][631]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.41.19:446][744]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.41.58:548][ 58]LogEditorViewport: Clicking Background
+[2016.09.30-12.42.00:948][341]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.42.01:940][450]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.42.03:021][567]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.42.04:364][716]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.42.16:585][ 20]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.42.47:782][823]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.42.49:242][997]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.42.51:605][280]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.42.54:997][684]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.42.55:993][803]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.42.58:080][ 52]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.44.52:570][892]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.44.54:777][155]Cmd: TRANSACTION UNDO
+[2016.09.30-12.44.54:792][155]LogEditorTransaction: Undo Edit Properties
+[2016.09.30-12.44.54:804][155]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.45.24:190][480]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto2.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2016.09.30-12.45.54:503][480]LogSavePackage: Save=30209.09ms
+[2016.09.30-12.45.54:503][480]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA_Auto2EF3C521342B10DAF3C3E6DB06C0AED9C.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto2.umap'
+[2016.09.30-12.45.54:523][480]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Scenes/3_IA_Auto2.umap
+[2016.09.30-12.45.54:572][480]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Scenes/3_IA' took 30.409
+[2016.09.30-12.45.54:572][480]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 30.409
+[2016.09.30-12.45.54:605][480]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Materials/RedInstance] ([1] browsable assets)...
+[2016.09.30-12.45.54:666][480]OBJ SavePackage:     Rendered thumbnail for [MaterialInstanceConstant /Game/Materials/RedInstance.RedInstance]
+[2016.09.30-12.45.54:666][480]OBJ SavePackage: Finished generating thumbnails for package [/Game/Materials/RedInstance]
+[2016.09.30-12.45.54:831][480]LogSavePackage: Save=56.20ms
+[2016.09.30-12.45.54:831][480]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedInstance_Auto2A65A763246A78F3418E7BF80E1B1BD5B.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Materials/RedInstance_Auto2.uasset'
+[2016.09.30-12.45.54:849][480]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Autosaves/Game/Materials/RedInstance_Auto2.uasset
+[2016.09.30-12.45.54:850][480]LogFileHelpers: Auto-saving content packages took 0.275
+[2016.09.30-12.46.16:816][915]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.19:075][161]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.24:620][782]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.25:169][838]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.33:042][722]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.33:719][790]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.37:380][174]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.38:122][249]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.43:195][774]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (9_Ascending_aorta)
+[2016.09.30-12.46.43:732][827]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.45:951][ 60]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.46:450][109]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.46.53:246][854]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14_Pulmonary_trunk)
+[2016.09.30-12.46.53:898][921]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.47.17:863][310]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.17:863][310]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.47.17:863][310]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:47:17)
+[2016.09.30-12.47.17:863][310]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.47.17:872][310]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008510s)
+[2016.09.30-12.47.17:872][310]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.47.17:873][310]LogPlayLevel: PIE: World Init took: (0.000707s)
+[2016.09.30-12.47.17:873][310]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009496s)
+[2016.09.30-12.47.17:898][310]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.47.17:906][310]LogInit: FAudioDevice initialized.
+[2016.09.30-12.47.17:960][310]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.47.17:970][310]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.47.17
+[2016.09.30-12.47.17:971][310]LogWorld: Bringing up level for play took: 0.010009
+[2016.09.30-12.47.17:977][310]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.854
+[2016.09.30-12.47.17:977][310]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.22:401][840]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.22:454][840]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.25:100][127]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.47.27:170][362]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.27:170][362]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.47.27:170][362]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:47:27)
+[2016.09.30-12.47.27:170][362]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.47.27:178][362]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008154s)
+[2016.09.30-12.47.27:179][362]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.47.27:179][362]LogPlayLevel: PIE: World Init took: (0.000625s)
+[2016.09.30-12.47.27:179][362]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008973s)
+[2016.09.30-12.47.27:198][362]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.47.27:225][362]LogInit: FAudioDevice initialized.
+[2016.09.30-12.47.27:276][362]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.47.27:286][362]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.47.27
+[2016.09.30-12.47.27:287][362]LogWorld: Bringing up level for play took: 0.009889
+[2016.09.30-12.47.27:292][362]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.461
+[2016.09.30-12.47.27:292][362]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.47.51:340][240]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.48.18:048][432]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.48.18:118][432]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.51.57:479][603]LogEditorViewport: Clicking Background
+[2016.09.30-12.51.58:721][746]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.51.58:722][746]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.51.58:722][746]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:51:58)
+[2016.09.30-12.51.58:722][746]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.51.58:730][746]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008483s)
+[2016.09.30-12.51.58:731][746]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.51.58:731][746]LogPlayLevel: PIE: World Init took: (0.000708s)
+[2016.09.30-12.51.58:731][746]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009402s)
+[2016.09.30-12.51.58:750][746]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.51.58:781][746]LogInit: FAudioDevice initialized.
+[2016.09.30-12.51.58:834][746]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.51.58:843][746]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.51.58
+[2016.09.30-12.51.58:843][746]LogWorld: Bringing up level for play took: 0.008793
+[2016.09.30-12.51.58:849][746]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.005
+[2016.09.30-12.51.58:849][746]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.52.06:724][674]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.07:299][674]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.07:308][674]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.52.07:333][674]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2016.09.30-12.52.07:337][674]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionCollectionParameter_0, compiling. 
+[2016.09.30-12.52.09:741][795]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-12.52.09:741][795]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-12.52.09:741][795]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-12.52.09:741][795]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-12.52.12:763][157]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.12:793][157]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.12:801][157]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.52.14:041][246]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2016.09.30-12.52.14:041][246]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-12.52.14:041][246]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.09.30-12.52.20:572][ 27]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.52.20:623][ 27]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.52.21:222][ 95]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.52.59:041][517]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.59:052][517]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.52.59:060][517]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.53.00:567][684]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2016.09.30-12.53.00:567][684]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-12.53.00:567][684]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.09.30-12.53.02:156][844]LogEditorViewport: Clicking Background
+[2016.09.30-12.53.03:052][945]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.53.03:052][945]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.53.03:053][945]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:53:03)
+[2016.09.30-12.53.03:053][945]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.53.03:061][945]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008104s)
+[2016.09.30-12.53.03:061][945]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.53.03:062][945]LogPlayLevel: PIE: World Init took: (0.000680s)
+[2016.09.30-12.53.03:062][945]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008981s)
+[2016.09.30-12.53.03:080][945]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.53.03:114][945]LogInit: FAudioDevice initialized.
+[2016.09.30-12.53.03:177][945]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.53.03:938][945]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.53.03
+[2016.09.30-12.53.03:939][945]LogWorld: Bringing up level for play took: 0.760721
+[2016.09.30-12.53.03:947][945]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.088
+[2016.09.30-12.53.03:947][945]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.53.08:985][547]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.53.09:018][547]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.53.15:917][220]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.53.15:928][220]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.53.15:935][220]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.53.17:036][342]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2016.09.30-12.53.17:036][342]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-12.53.17:036][342]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.09.30-12.53.17:540][380]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.09.30-12.53.47:534][380]LogSavePackage: Save=29857.17ms
+[2016.09.30-12.53.47:534][380]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA51ED8C2E401381E8C5D5F7988475DCFA.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap'
+[2016.09.30-12.53.47:608][380]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap
+[2016.09.30-12.53.47:719][380]LogFileHelpers: Saving map '3_IA' took 30.331
+[2016.09.30-12.53.47:767][380]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/RedInstance" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset" SILENT=true
+[2016.09.30-12.53.47:924][380]LogSavePackage: Save=60.99ms
+[2016.09.30-12.53.47:925][380]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedInstance9BB9EE734FDA0FEDA934689B833C0168.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset'
+[2016.09.30-12.53.48:008][380]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset
+[2016.09.30-12.54.07:501][808]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-12.54.15:330][629]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.54.15:330][629]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.54.15:330][629]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:54:15)
+[2016.09.30-12.54.15:330][629]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.54.15:338][629]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007896s)
+[2016.09.30-12.54.15:339][629]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.54.15:339][629]LogPlayLevel: PIE: World Init took: (0.000704s)
+[2016.09.30-12.54.15:339][629]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008796s)
+[2016.09.30-12.54.15:360][629]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.54.15:388][629]LogInit: FAudioDevice initialized.
+[2016.09.30-12.54.15:442][629]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.54.15:452][629]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.54.15
+[2016.09.30-12.54.15:453][629]LogWorld: Bringing up level for play took: 0.009903
+[2016.09.30-12.54.15:459][629]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.595
+[2016.09.30-12.54.15:459][629]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.54.23:356][575]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.54.43:477][987]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.55.48:949][287]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.55.48:998][287]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.58.04:181][316]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.58.05:505][473]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.58.09:238][911]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.58.09:238][911]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-12.58.09:238][911]PIE: New page: PIE session: 3_IA (30 Sep 2016 13:58:09)
+[2016.09.30-12.58.09:238][911]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-12.58.09:255][911]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016376s)
+[2016.09.30-12.58.09:256][911]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-12.58.09:256][911]LogPlayLevel: PIE: World Init took: (0.001330s)
+[2016.09.30-12.58.09:256][911]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.018058s)
+[2016.09.30-12.58.09:282][911]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-12.58.09:306][911]LogInit: FAudioDevice initialized.
+[2016.09.30-12.58.10:121][911]LogWorld: Game class is 'GameMode'
+[2016.09.30-12.58.10:133][911]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-13.58.10
+[2016.09.30-12.58.10:135][911]LogWorld: Bringing up level for play took: 0.012290
+[2016.09.30-12.58.10:143][911]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.259
+[2016.09.30-12.58.10:143][911]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.58.19:450][990]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.58.19:463][990]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.58.19:472][990]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.58.22:262][229]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-12.58.22:262][229]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-12.58.22:262][229]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-12.58.22:262][229]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-12.58.24:437][489]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.58.28:730][  3]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.58.34:033][637]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.58.34:048][637]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.58.48:438][160]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.58.50:168][366]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-12.58.50:181][366]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.59.01:196][554]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-12.59.24:019][218]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-12.59.46:567][787]LogPackageName: SearchForPackageOnDisk took   0.144s, but failed to resolve 3_IA_Game.umap.
+[2016.09.30-12.59.46:710][787]LogPackageName: SearchForPackageOnDisk took   0.125s, but failed to resolve 3_IA_Game.umap.
+[2016.09.30-12.59.46:711][787]LogNet: Browse: /Engine/Maps/Entry
+[2016.09.30-12.59.46:711][787]LogNet:Warning: Travel Failure: [InvalidURL]: Invalid URL: /Engine/Maps/Entry
+[2016.09.30-12.59.46:711][787]LogNet:Warning: TravelFailure: InvalidURL, Reason for Failure: 'Invalid URL: /Engine/Maps/Entry'. Shutting down PIE.
+[2016.09.30-12.59.46:711][787]PIE:Warning: Warning TravelFailure: InvalidURL, Reason for Failure: 'Invalid URL: /Engine/Maps/Entry'. Shutting down PIE.
+[2016.09.30-12.59.46:711][787]LogNet:Warning: Travel Failure: [ClientTravelFailure]: Invalid URL: /Engine/Maps/Entry
+[2016.09.30-12.59.46:711][787]LogNet:Warning: TravelFailure: ClientTravelFailure, Reason for Failure: 'Invalid URL: /Engine/Maps/Entry'. Shutting down PIE.
+[2016.09.30-12.59.46:711][787]PIE:Warning: Warning TravelFailure: ClientTravelFailure, Reason for Failure: 'Invalid URL: /Engine/Maps/Entry'. Shutting down PIE.
+[2016.09.30-12.59.46:712][787]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-12.59.46:765][787]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.13:741][998]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.13:741][998]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.00.13:741][998]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:00:13)
+[2016.09.30-13.00.13:741][998]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.00.13:749][998]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008350s)
+[2016.09.30-13.00.13:750][998]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.00.13:750][998]LogPlayLevel: PIE: World Init took: (0.000661s)
+[2016.09.30-13.00.13:750][998]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009194s)
+[2016.09.30-13.00.13:768][998]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.00.13:790][998]LogInit: FAudioDevice initialized.
+[2016.09.30-13.00.13:843][998]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.00.13:853][998]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.00.13
+[2016.09.30-13.00.13:854][998]LogWorld: Bringing up level for play took: 0.009687
+[2016.09.30-13.00.13:859][998]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.966
+[2016.09.30-13.00.13:859][998]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.22:977][ 90]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.23:040][ 90]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.24:384][245]Cmd: TRANSACTION UNDO
+[2016.09.30-13.00.24:384][245]LogEditorTransaction: Undo Edit Blend Mode
+[2016.09.30-13.00.24:385][245]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.00.24:386][245]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.00.24:396][245]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.00.24:405][245]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.00.27:526][472]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-13.00.27:526][472]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-13.00.27:526][472]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.00.27:526][472]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.00.32:983][101]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.32:983][101]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.00.32:984][101]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:00:32)
+[2016.09.30-13.00.32:984][101]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.00.32:992][101]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008438s)
+[2016.09.30-13.00.32:993][101]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.00.32:993][101]LogPlayLevel: PIE: World Init took: (0.000738s)
+[2016.09.30-13.00.32:993][101]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009397s)
+[2016.09.30-13.00.33:011][101]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.00.33:030][101]LogInit: FAudioDevice initialized.
+[2016.09.30-13.00.33:084][101]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.00.33:093][101]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.00.33
+[2016.09.30-13.00.33:094][101]LogWorld: Bringing up level for play took: 0.009048
+[2016.09.30-13.00.33:099][101]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.204
+[2016.09.30-13.00.33:099][101]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.48:800][355]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 1 with static permutations.
+[2016.09.30-13.00.58:674][536]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.00.58:739][536]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.13:175][ 83]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.13:175][ 83]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.01.13:175][ 83]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:01:13)
+[2016.09.30-13.01.13:176][ 83]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.01.13:185][ 83]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009015s)
+[2016.09.30-13.01.13:185][ 83]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.01.13:185][ 83]LogPlayLevel: PIE: World Init took: (0.000791s)
+[2016.09.30-13.01.13:186][ 83]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.010017s)
+[2016.09.30-13.01.13:204][ 83]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.01.13:249][ 83]LogInit: FAudioDevice initialized.
+[2016.09.30-13.01.14:057][ 83]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.01.14:069][ 83]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.01.14
+[2016.09.30-13.01.14:070][ 83]LogWorld: Bringing up level for play took: 0.011705
+[2016.09.30-13.01.14:078][ 83]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.18
+[2016.09.30-13.01.14:078][ 83]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.17:410][478]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.17:462][478]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.27:256][619]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.27:256][619]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.01.27:256][619]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:01:27)
+[2016.09.30-13.01.27:257][619]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.01.27:265][619]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007908s)
+[2016.09.30-13.01.27:265][619]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.01.27:265][619]LogPlayLevel: PIE: World Init took: (0.000619s)
+[2016.09.30-13.01.27:265][619]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008754s)
+[2016.09.30-13.01.27:285][619]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.01.27:297][619]LogInit: FAudioDevice initialized.
+[2016.09.30-13.01.27:347][619]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.01.27:363][619]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.01.27
+[2016.09.30-13.01.27:364][619]LogWorld: Bringing up level for play took: 0.009818
+[2016.09.30-13.01.27:369][619]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.47
+[2016.09.30-13.01.27:369][619]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.31:942][166]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.31:997][166]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.41:542][263]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.41:542][263]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.01.41:542][263]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:01:41)
+[2016.09.30-13.01.41:542][263]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.01.41:551][263]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008491s)
+[2016.09.30-13.01.41:551][263]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.01.41:551][263]LogPlayLevel: PIE: World Init took: (0.000634s)
+[2016.09.30-13.01.41:551][263]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009310s)
+[2016.09.30-13.01.41:569][263]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.01.41:582][263]LogInit: FAudioDevice initialized.
+[2016.09.30-13.01.41:634][263]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.01.41:644][263]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.01.41
+[2016.09.30-13.01.41:645][263]LogWorld: Bringing up level for play took: 0.009927
+[2016.09.30-13.01.41:650][263]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.749
+[2016.09.30-13.01.41:650][263]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.44:682][626]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.01.44:735][626]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.07:060][440]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.07:060][440]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.02.07:060][440]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:02:07)
+[2016.09.30-13.02.07:060][440]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.02.07:076][440]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015899s)
+[2016.09.30-13.02.07:077][440]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.02.07:077][440]LogPlayLevel: PIE: World Init took: (0.001076s)
+[2016.09.30-13.02.07:078][440]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017290s)
+[2016.09.30-13.02.07:099][440]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.02.07:107][440]LogInit: FAudioDevice initialized.
+[2016.09.30-13.02.07:157][440]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.02.07:167][440]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.02.07
+[2016.09.30-13.02.07:168][440]LogWorld: Bringing up level for play took: 0.009698
+[2016.09.30-13.02.07:174][440]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.271
+[2016.09.30-13.02.07:174][440]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.10:165][798]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.10:234][798]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.11:157][902]Cmd: TRANSACTION UNDO
+[2016.09.30-13.02.11:157][902]LogEditorTransaction: Undo Clear Children
+[2016.09.30-13.02.11:207][902]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.02.11:226][902]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.02.12:629][ 13]LogEditorViewport: Clicking Background
+[2016.09.30-13.02.14:104][138]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-13.02.14:104][138]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-13.02.14:104][138]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.02.14:104][138]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.02.27:993][795]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.02.28:006][795]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.02.28:015][795]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.02.29:519][959]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 25 instructions
+[2016.09.30-13.02.29:519][959]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 62 instructions
+[2016.09.30-13.02.29:519][959]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-13.02.29:519][959]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.02.30:608][ 89]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-13.02.39:227][ 75]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.02.39:239][ 75]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.02.39:246][ 75]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.02.40:231][171]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 22 instructions
+[2016.09.30-13.02.40:231][171]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-13.02.40:231][171]MaterialEditorStats: Info Texture samplers: 0/16
+[2016.09.30-13.02.44:474][677]LogEditorViewport: Clicking Background
+[2016.09.30-13.02.47:484][ 31]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.02.47:484][ 31]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.02.47:484][ 31]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:02:47)
+[2016.09.30-13.02.47:484][ 31]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.02.47:492][ 31]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008017s)
+[2016.09.30-13.02.47:493][ 31]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.02.47:493][ 31]LogPlayLevel: PIE: World Init took: (0.000636s)
+[2016.09.30-13.02.47:493][ 31]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008858s)
+[2016.09.30-13.02.47:510][ 31]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.02.47:557][ 31]LogInit: FAudioDevice initialized.
+[2016.09.30-13.02.48:367][ 31]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.02.48:379][ 31]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.02.48
+[2016.09.30-13.02.48:380][ 31]LogWorld: Bringing up level for play took: 0.011543
+[2016.09.30-13.02.48:388][ 31]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.482
+[2016.09.30-13.02.48:388][ 31]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.03.08:606][410]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.03.08:642][410]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.03.09:316][486]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-13.03.19:693][574]LogEditorViewport: Clicking Background
+[2016.09.30-13.03.33:482][600]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.03.33:482][600]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.03.33:483][600]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:03:33)
+[2016.09.30-13.03.33:483][600]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.03.33:491][600]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008203s)
+[2016.09.30-13.03.33:491][600]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.03.33:492][600]LogPlayLevel: PIE: World Init took: (0.000748s)
+[2016.09.30-13.03.33:492][600]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009145s)
+[2016.09.30-13.03.33:510][600]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.03.33:517][600]LogInit: FAudioDevice initialized.
+[2016.09.30-13.03.33:572][600]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.03.33:582][600]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.03.33
+[2016.09.30-13.03.33:583][600]LogWorld: Bringing up level for play took: 0.009823
+[2016.09.30-13.03.33:588][600]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.678
+[2016.09.30-13.03.33:588][600]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.04.34:039][825]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.04.34:077][825]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.06.59:142][ 98]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.06.59:142][ 98]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.06.59:142][ 98]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:06:59)
+[2016.09.30-13.06.59:142][ 98]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.06.59:151][ 98]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008759s)
+[2016.09.30-13.06.59:151][ 98]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.06.59:152][ 98]LogPlayLevel: PIE: World Init took: (0.000750s)
+[2016.09.30-13.06.59:152][ 98]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009777s)
+[2016.09.30-13.06.59:171][ 98]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.06.59:190][ 98]LogInit: FAudioDevice initialized.
+[2016.09.30-13.06.59:254][ 98]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.06.59:265][ 98]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.06.59
+[2016.09.30-13.06.59:266][ 98]LogWorld: Bringing up level for play took: 0.009974
+[2016.09.30-13.06.59:271][ 98]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.344
+[2016.09.30-13.06.59:271][ 98]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.05:991][900]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.06:048][900]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.09:852][347]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.09:852][347]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.07.09:852][347]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:07:09)
+[2016.09.30-13.07.09:852][347]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.07.09:860][347]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007995s)
+[2016.09.30-13.07.09:861][347]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.07.09:861][347]LogPlayLevel: PIE: World Init took: (0.000604s)
+[2016.09.30-13.07.09:861][347]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.008783s)
+[2016.09.30-13.07.09:878][347]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.07.09:897][347]LogInit: FAudioDevice initialized.
+[2016.09.30-13.07.09:949][347]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.07.09:959][347]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.07.09
+[2016.09.30-13.07.09:960][347]LogWorld: Bringing up level for play took: 0.009657
+[2016.09.30-13.07.09:966][347]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.038
+[2016.09.30-13.07.09:966][347]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.10:732][415]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.10:795][415]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.12:625][623]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.12:625][623]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.07.12:626][623]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:07:12)
+[2016.09.30-13.07.12:626][623]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.07.12:641][623]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015746s)
+[2016.09.30-13.07.12:642][623]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.07.12:643][623]LogPlayLevel: PIE: World Init took: (0.001031s)
+[2016.09.30-13.07.12:643][623]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017083s)
+[2016.09.30-13.07.12:665][623]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.07.12:678][623]LogInit: FAudioDevice initialized.
+[2016.09.30-13.07.12:749][623]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.07.12:760][623]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.07.12
+[2016.09.30-13.07.12:761][623]LogWorld: Bringing up level for play took: 0.009896
+[2016.09.30-13.07.12:766][623]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.162
+[2016.09.30-13.07.12:766][623]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.20:001][490]LogNet: Browse: /Game/Scenes/1_MM
+[2016.09.30-13.07.20:013][490]LogLoad: LoadMap: /Game/Scenes/1_MM
+[2016.09.30-13.07.20:056][490]Cmd: MEM
+[2016.09.30-13.07.20:189][490]LogMemory: Platform Memory Stats for Windows
+[2016.09.30-13.07.20:189][490]LogMemory: Process Physical Memory: 586.12 MB used, 1056.12 MB peak
+[2016.09.30-13.07.20:189][490]LogMemory: Process Virtual Memory: 1932.40 MB used, 1939.45 MB peak
+[2016.09.30-13.07.20:189][490]LogMemory: Physical Memory: 3777.11 MB used, 8134.95 MB total
+[2016.09.30-13.07.20:189][490]LogMemory: Virtual Memory: 2588.11 MB used, 8388608.00 MB total
+[2016.09.30-13.07.20:189][490]LogMemory: 
+[2016.09.30-13.07.20:189][490]Allocator Stats for TBB: (not implemented)
+[2016.09.30-13.07.21:213][490]LogAIModule: Creating AISystem for world 1_MM
+[2016.09.30-13.07.21:214][490]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.07.21:219][490]PIE:Warning: Warning AttachTo: '/Game/Scenes/UEDPIE_0_1_MM.1_MM:PersistentLevel.CameraActor_1.SceneComponent' cannot be attached to itself. Aborting.
+[2016.09.30-13.07.21:220][490]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_1_MM.1_MM up for play (max tick rate 0) at 2016.09.30-14.07.21
+[2016.09.30-13.07.21:222][490]LogWorld: Bringing up level for play took: 0.005268
+[2016.09.30-13.07.21:224][490]LogGameMode: Warning - PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2016.09.30-13.07.21:235][490]LogLoad: Took 1.221303 seconds to LoadMap(/Game/Scenes/1_MM)
+[2016.09.30-13.07.21:277][491]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.21:317][491]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.07.56:003][486]LogEditorViewport: Clicking Background
+[2016.09.30-13.08.08:354][772]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-13.08.15:977][680]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.09.08:287][946]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.09.08:299][946]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.09.08:308][946]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.09.10:266][160]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 25 instructions
+[2016.09.30-13.09.10:266][160]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 62 instructions
+[2016.09.30-13.09.10:266][160]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-13.09.10:266][160]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.09.11:636][324]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.09.11:648][324]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.09.11:657][324]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.09.13:209][480]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 44 instructions
+[2016.09.30-13.09.13:209][480]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.09.13:209][480]MaterialEditorStats: Info Vertex shader: 29 instructions
+[2016.09.30-13.09.13:209][480]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.09.15:812][783]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.09.15:812][783]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.09.15:812][783]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:09:15)
+[2016.09.30-13.09.15:813][783]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.09.15:821][783]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008779s)
+[2016.09.30-13.09.15:822][783]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.09.15:822][783]LogPlayLevel: PIE: World Init took: (0.000729s)
+[2016.09.30-13.09.15:822][783]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009739s)
+[2016.09.30-13.09.15:842][783]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.09.15:871][783]LogInit: FAudioDevice initialized.
+[2016.09.30-13.09.15:920][783]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.09.15:930][783]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.09.15
+[2016.09.30-13.09.15:931][783]LogWorld: Bringing up level for play took: 0.009902
+[2016.09.30-13.09.15:937][783]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1
+[2016.09.30-13.09.15:937][783]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.09.19:469][206]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.09.19:523][206]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.09.23:819][649]LogEditorViewport: Clicking Background
+[2016.09.30-13.09.24:686][745]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.09.24:686][745]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.09.24:686][745]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:09:24)
+[2016.09.30-13.09.24:686][745]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.09.24:702][745]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015989s)
+[2016.09.30-13.09.24:703][745]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.09.24:703][745]LogPlayLevel: PIE: World Init took: (0.001070s)
+[2016.09.30-13.09.24:704][745]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017404s)
+[2016.09.30-13.09.24:730][745]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.09.24:745][745]LogInit: FAudioDevice initialized.
+[2016.09.30-13.09.24:797][745]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.09.24:807][745]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.09.24
+[2016.09.30-13.09.24:808][745]LogWorld: Bringing up level for play took: 0.009716
+[2016.09.30-13.09.24:813][745]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.124
+[2016.09.30-13.09.24:813][745]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.19:129][835]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.19:177][835]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.28:520][941]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.28:520][941]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.10.28:520][941]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:10:28)
+[2016.09.30-13.10.28:520][941]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.10.28:536][941]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016007s)
+[2016.09.30-13.10.28:537][941]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.10.28:538][941]LogPlayLevel: PIE: World Init took: (0.001303s)
+[2016.09.30-13.10.28:538][941]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017638s)
+[2016.09.30-13.10.28:560][941]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.10.28:589][941]LogInit: FAudioDevice initialized.
+[2016.09.30-13.10.29:405][941]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.10.29:418][941]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.10.29
+[2016.09.30-13.10.29:419][941]LogWorld: Bringing up level for play took: 0.011436
+[2016.09.30-13.10.29:426][941]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.491
+[2016.09.30-13.10.29:427][941]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.37:022][850]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.37:066][850]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.51:376][562]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.10.51:388][562]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.10.51:397][562]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.10.53:878][823]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.53:878][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.10.53:878][823]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:10:53)
+[2016.09.30-13.10.53:878][823]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.10.53:887][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008398s)
+[2016.09.30-13.10.53:887][823]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.10.53:888][823]LogPlayLevel: PIE: World Init took: (0.000609s)
+[2016.09.30-13.10.53:888][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009203s)
+[2016.09.30-13.10.53:908][823]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.10.53:949][823]LogInit: FAudioDevice initialized.
+[2016.09.30-13.10.54:002][823]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.10.54:011][823]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.10.54
+[2016.09.30-13.10.54:762][823]LogWorld: Bringing up level for play took: 0.759477
+[2016.09.30-13.10.54:771][823]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.835
+[2016.09.30-13.10.54:771][823]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.10.54:800][824]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.10.54:800][824]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.10.54:800][824]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.10.54:800][824]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.11.05:903][154]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.11.05:936][154]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.11.26:203][580]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.11.26:215][580]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.11.26:224][580]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.11.28:671][781]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.11.28:671][781]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.11.28:671][781]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:11:28)
+[2016.09.30-13.11.28:672][781]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.11.28:683][781]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011711s)
+[2016.09.30-13.11.28:684][781]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.11.28:684][781]LogPlayLevel: PIE: World Init took: (0.000686s)
+[2016.09.30-13.11.28:684][781]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.012623s)
+[2016.09.30-13.11.28:702][781]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.11.28:712][781]LogInit: FAudioDevice initialized.
+[2016.09.30-13.11.28:768][781]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.11.28:778][781]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.11.28
+[2016.09.30-13.11.28:779][781]LogWorld: Bringing up level for play took: 0.009873
+[2016.09.30-13.11.28:785][781]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.15
+[2016.09.30-13.11.28:785][781]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.11.28:803][782]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.11.28:803][782]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.11.28:803][782]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.11.28:803][782]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.11.39:838][102]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.11.39:851][102]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.11.39:859][102]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.11.42:115][277]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.11.42:115][277]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.11.42:115][277]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.11.42:115][277]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.11.57:574][110]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.11.57:622][110]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.12.33:451][365]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2_Wall)
+[2016.09.30-13.13.04:749][876]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.04:761][876]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.04:770][876]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.13.07:975][111]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.07:975][111]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.13.07:975][111]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:13:07)
+[2016.09.30-13.13.07:975][111]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.13.07:992][111]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016193s)
+[2016.09.30-13.13.07:993][111]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.13.07:993][111]LogPlayLevel: PIE: World Init took: (0.001075s)
+[2016.09.30-13.13.07:993][111]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017565s)
+[2016.09.30-13.13.08:021][111]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.13.08:050][111]LogInit: FAudioDevice initialized.
+[2016.09.30-13.13.08:100][111]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.13.08:862][111]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.13.08
+[2016.09.30-13.13.08:863][111]LogWorld: Bringing up level for play took: 0.762538
+[2016.09.30-13.13.08:871][111]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.062
+[2016.09.30-13.13.08:871][111]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.08:903][112]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-13.13.08:903][112]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-13.13.08:903][112]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.13.08:903][112]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.13.13:200][624]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.13:261][624]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.17:539][129]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.17:551][129]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.17:560][129]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.13.19:682][317]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.19:682][317]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.13.19:683][317]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:13:19)
+[2016.09.30-13.13.19:683][317]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.13.19:691][317]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008188s)
+[2016.09.30-13.13.19:691][317]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.13.19:692][317]LogPlayLevel: PIE: World Init took: (0.000648s)
+[2016.09.30-13.13.19:692][317]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.009033s)
+[2016.09.30-13.13.19:710][317]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.13.19:721][317]LogInit: FAudioDevice initialized.
+[2016.09.30-13.13.19:775][317]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.13.19:784][317]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.13.19
+[2016.09.30-13.13.19:785][317]LogWorld: Bringing up level for play took: 0.008760
+[2016.09.30-13.13.19:790][317]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.857
+[2016.09.30-13.13.19:790][317]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.13.19:813][319]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 23 instructions
+[2016.09.30-13.13.19:814][319]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 23 instructions
+[2016.09.30-13.13.19:814][319]MaterialEditorStats: Info Vertex shader: 84 instructions
+[2016.09.30-13.13.19:814][319]MaterialEditorStats: Info Texture samplers: 7/16
+[2016.09.30-13.13.26:396][105]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.26:408][105]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.13.26:417][105]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.13.28:119][203]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.09.30-13.13.57:989][203]LogSavePackage: Save=29743.13ms
+[2016.09.30-13.13.57:989][203]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA5602D154439FC25F6F67099F2BDD01F4.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap'
+[2016.09.30-13.13.58:076][203]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap
+[2016.09.30-13.13.58:196][203]LogFileHelpers: Saving map '3_IA' took 30.344
+[2016.09.30-13.13.58:233][203]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/RedInstance" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset" SILENT=true
+[2016.09.30-13.13.58:418][203]LogSavePackage: Save=63.00ms
+[2016.09.30-13.13.58:418][203]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedInstanceD20436E14929526614CEE5910D1D51D7.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset'
+[2016.09.30-13.13.58:508][203]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/RedInstance.uasset
+[2016.09.30-13.13.58:551][203]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.13.58:551][203]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.13.58:551][203]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.13.58:551][203]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.14.08:724][408]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.14.08:798][408]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.14.20:324][781]LogEditorViewport: Clicking Background
+[2016.09.30-13.14.33:449][347]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.33:489][347]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.33:498][347]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.36:651][677]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.14.36:651][677]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.14.36:651][677]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.14.36:651][677]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.14.37:302][750]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.14.37:302][750]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.14.37:302][750]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:14:37)
+[2016.09.30-13.14.37:302][750]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.14.37:319][750]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016064s)
+[2016.09.30-13.14.37:320][750]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.14.37:320][750]LogPlayLevel: PIE: World Init took: (0.001139s)
+[2016.09.30-13.14.37:320][750]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.017555s)
+[2016.09.30-13.14.37:342][750]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.14.37:377][750]LogInit: FAudioDevice initialized.
+[2016.09.30-13.14.38:183][750]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.14.38:195][750]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.14.38
+[2016.09.30-13.14.38:196][750]LogWorld: Bringing up level for play took: 0.011709
+[2016.09.30-13.14.38:204][750]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 1.27
+[2016.09.30-13.14.38:205][750]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.14.43:417][370]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.43:417][370]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-13.14.43:417][370]LogMaterial:Warning: 	Light function materials must be opaque.
+[2016.09.30-13.14.43:424][370]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.43:425][370]LogMaterial:Warning: Failed to compile Material /Engine/Transient.Red for platform PCD3D_SM5, Default Material will be used in game.
+[2016.09.30-13.14.43:425][370]LogMaterial:Warning: 	Light function materials must be opaque.
+[2016.09.30-13.14.43:425][370]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.43:427][370]MaterialEditorStats:Error: Error [SM5] Light function materials must be opaque.
+[2016.09.30-13.14.46:191][689]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.46:203][689]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.46:207][689]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.47:315][810]MaterialEditorStats: Info Base pass shader without light map: 4 instructions
+[2016.09.30-13.14.47:315][810]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.14.47:315][810]MaterialEditorStats: Info Texture samplers: 3/16
+[2016.09.30-13.14.47:636][848]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.47:653][848]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.47:663][848]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.50:241][ 58]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.14.50:241][ 58]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.14.50:241][ 58]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.14.50:241][ 58]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.14.50:649][107]LogMaterialEditor: Saving and Compiling material Red
+[2016.09.30-13.14.51:076][107]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.51:097][107]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.51:104][107]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.51:637][107]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.14.51:649][107]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.14.55:707][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/Red" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset" SILENT=true
+[2016.09.30-13.14.55:860][107]LogSavePackage: Save=55.52ms
+[2016.09.30-13.14.55:860][107]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedEA9FB16A4858278479587E978B680BA2.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset'
+[2016.09.30-13.14.55:943][107]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset
+[2016.09.30-13.14.55:952][107]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 80 instructions
+[2016.09.30-13.14.55:952][107]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 116 instructions
+[2016.09.30-13.14.55:952][107]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.14.55:952][107]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.15.03:355][994]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.03:392][994]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.04:399][107]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.04:399][107]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.15.04:399][107]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:15:04)
+[2016.09.30-13.15.04:400][107]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.15.04:415][107]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015534s)
+[2016.09.30-13.15.04:416][107]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.15.04:416][107]LogPlayLevel: PIE: World Init took: (0.001006s)
+[2016.09.30-13.15.04:416][107]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.016842s)
+[2016.09.30-13.15.04:445][107]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.15.04:459][107]LogInit: FAudioDevice initialized.
+[2016.09.30-13.15.04:511][107]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.15.04:521][107]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.15.04
+[2016.09.30-13.15.04:522][107]LogWorld: Bringing up level for play took: 0.009845
+[2016.09.30-13.15.04:527][107]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA -0.408
+[2016.09.30-13.15.04:527][107]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.22:334][240]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.22:346][240]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.22:355][240]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.23:350][328]LogMaterialEditor: Saving and Compiling material Red
+[2016.09.30-13.15.23:815][328]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.23:836][328]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.23:843][328]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.23:863][328]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.23:876][328]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.28:411][328]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/Red" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset" SILENT=true
+[2016.09.30-13.15.28:535][328]LogSavePackage: Save=55.51ms
+[2016.09.30-13.15.28:535][328]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Red87364A9349DB7E0E48287F84CE12F250.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset'
+[2016.09.30-13.15.28:615][328]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset
+[2016.09.30-13.15.28:623][328]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 63 instructions
+[2016.09.30-13.15.28:623][328]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-13.15.28:623][328]MaterialEditorStats: Info Vertex shader: 84 instructions
+[2016.09.30-13.15.28:623][328]MaterialEditorStats: Info Texture samplers: 7/16
+[2016.09.30-13.15.32:316][754]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.32:354][754]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.34:167][874]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.34:167][874]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.15.34:167][874]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:15:34)
+[2016.09.30-13.15.34:167][874]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.15.34:183][874]LogPlayLevel: PIE: StaticDuplicateObject took: (0.015453s)
+[2016.09.30-13.15.34:184][874]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.15.34:184][874]LogPlayLevel: PIE: World Init took: (0.001045s)
+[2016.09.30-13.15.34:184][874]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.016834s)
+[2016.09.30-13.15.34:215][874]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.15.34:228][874]LogInit: FAudioDevice initialized.
+[2016.09.30-13.15.34:284][874]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.15.35:044][874]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.15.35
+[2016.09.30-13.15.35:046][874]LogWorld: Bringing up level for play took: 0.760556
+[2016.09.30-13.15.35:054][874]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.116
+[2016.09.30-13.15.35:054][874]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.48:087][432]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.48:125][432]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.15.52:438][942]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.52:451][942]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.52:459][942]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.53:578][ 66]LogMaterialEditor: Saving and Compiling material Red
+[2016.09.30-13.15.54:026][ 66]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.54:048][ 66]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.54:088][ 66]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.54:108][ 66]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.15.54:123][ 66]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.15.58:559][ 66]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/Red" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset" SILENT=true
+[2016.09.30-13.15.58:679][ 66]LogSavePackage: Save=52.63ms
+[2016.09.30-13.15.58:679][ 66]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedFFB09A914C2F8D4216CE7587B7705E2D.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset'
+[2016.09.30-13.15.58:774][ 66]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset
+[2016.09.30-13.15.58:783][ 66]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 50 instructions
+[2016.09.30-13.15.58:783][ 66]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 86 instructions
+[2016.09.30-13.15.58:783][ 66]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.15.58:783][ 66]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.16.01:453][363]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.16.01:453][363]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.09.30-13.16.01:453][363]PIE: New page: PIE session: 3_IA (30 Sep 2016 14:16:01)
+[2016.09.30-13.16.01:453][363]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_3_IA
+[2016.09.30-13.16.01:467][363]LogPlayLevel: PIE: StaticDuplicateObject took: (0.013980s)
+[2016.09.30-13.16.01:468][363]LogAIModule: Creating AISystem for world 3_IA
+[2016.09.30-13.16.01:469][363]LogPlayLevel: PIE: World Init took: (0.001075s)
+[2016.09.30-13.16.01:469][363]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/3_IA.3_IA to /Game/Scenes/UEDPIE_0_3_IA.3_IA (0.015362s)
+[2016.09.30-13.16.01:493][363]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.09.30-13.16.01:506][363]LogInit: FAudioDevice initialized.
+[2016.09.30-13.16.01:558][363]LogWorld: Game class is 'GameMode'
+[2016.09.30-13.16.01:568][363]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_3_IA.3_IA up for play (max tick rate 0) at 2016.09.30-14.16.01
+[2016.09.30-13.16.01:569][363]LogWorld: Bringing up level for play took: 0.010040
+[2016.09.30-13.16.01:574][363]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_3_IA 0.634
+[2016.09.30-13.16.01:574][363]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.16.07:112][ 25]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.16.07:125][ 25]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.16.07:133][ 25]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.16.09:566][224]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.16.09:566][224]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.16.09:566][224]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.16.09:566][224]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.16.10:182][298]LogMaterialEditor: Saving and Compiling material Red
+[2016.09.30-13.16.10:622][298]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.16.10:643][298]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.16.10:649][298]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.16.10:716][298]LogMaterial: Missing cached shader map for material Red, compiling. 
+[2016.09.30-13.16.10:730][298]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.16.15:231][298]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/Red" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset" SILENT=true
+[2016.09.30-13.16.15:358][298]LogSavePackage: Save=59.67ms
+[2016.09.30-13.16.15:358][298]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/RedAF2E9C974A0EEB6799B94FB22720420B.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset'
+[2016.09.30-13.16.15:444][298]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Red.uasset
+[2016.09.30-13.16.15:451][298]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 80 instructions
+[2016.09.30-13.16.15:452][298]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 116 instructions
+[2016.09.30-13.16.15:452][298]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.16.15:452][298]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.23.25:756][617]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/3_IA" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2016.09.30-13.23.55:706][617]LogSavePackage: Save=29793.97ms
+[2016.09.30-13.23.55:706][617]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/3_IA7DEC514444A65A43594785AAA46A4C13.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap'
+[2016.09.30-13.23.55:738][617]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Scenes/3_IA.umap
+[2016.09.30-13.24.10:708][350]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.24.10:826][350]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.24.10:835][350]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.24.10:859][350]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_0, compiling. 
+[2016.09.30-13.24.10:862][350]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionCollectionParameter_1, compiling. 
+[2016.09.30-13.24.14:388][642]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 26 instructions
+[2016.09.30-13.24.14:388][642]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 63 instructions
+[2016.09.30-13.24.14:388][642]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.24.14:388][642]MaterialEditorStats: Info Texture samplers: 4/16
+[2016.09.30-13.24.16:696][912]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.24.16:708][912]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.24.16:717][912]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.24.19:015][ 72]MaterialEditorStats: Info Base pass shader with only dynamic lighting: 45 instructions
+[2016.09.30-13.24.19:015][ 72]MaterialEditorStats: Info Base pass shader for self shadowed translucency: 82 instructions
+[2016.09.30-13.24.19:015][ 72]MaterialEditorStats: Info Vertex shader: 66 instructions
+[2016.09.30-13.24.19:015][ 72]MaterialEditorStats: Info Texture samplers: 6/16
+[2016.09.30-13.26.30:969][ 73]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.26.30:990][ 73]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.26.30:997][ 73]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.26.31:070][ 73]LogMaterial: Missing cached shader map for material Yellow, compiling. 
+[2016.09.30-13.26.31:083][ 73]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.09.30-13.26.36:031][ 73]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Materials/Yellow" FILE="E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Yellow.uasset" SILENT=true
+[2016.09.30-13.26.36:191][ 73]LogSavePackage: Save=57.30ms
+[2016.09.30-13.26.36:191][ 73]LogSavePackage: Moving 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Saved/Yellow4EDA3547421FE9F7AC75AC8BB2EF3028.tmp' to 'E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Yellow.uasset'
+[2016.09.30-13.26.36:271][ 73]LogSavePackage:Display: Finished SavePackage E:/Year 3/Heart Anatomy/2016_09_04 - Anatomy UNREAL - P 4.12/Content/Materials/Yellow.uasset
+[2016.09.30-13.26.38:223][ 73]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.26.38:261][ 73]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/3_IA.3_IA:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA' with GeneratedClass '/Game/Scenes/3_IA.3_IA_C' with ClassGeneratedBy '/Game/Scenes/3_IA.3_IA:PersistentLevel.3_IA'
+[2016.09.30-13.26.39:102][ 74]Cmd: QUIT_EDITOR
+[2016.09.30-13.26.39:240][ 74]LogExit: Preparing to exit.
+[2016.09.30-13.26.40:173][ 74]LogExit: Editor shut down
+[2016.09.30-13.26.40:174][ 74]LogExit: Transaction tracking system shut down
+[2016.09.30-13.26.40:394][ 74]LogObj: Freed 0b from 0 cluster array pools.
+[2016.09.30-13.26.40:394][ 74]LogExit: Object subsystem successfully closed.
+[2016.09.30-13.26.40:413][ 74]LogD3D11RHI: Shutdown
+[2016.09.30-13.26.40:413][ 74]LogD3D11RHI: CleanupD3DDevice
+[2016.09.30-13.26.40:416][ 74]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.09.30-13.26.40:609][ 74]LogModuleManager: Shutting down and abandoning module MaterialEditor (217)
+[2016.09.30-13.26.40:609][ 74]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
+[2016.09.30-13.26.40:609][ 74]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (215)
+[2016.09.30-13.26.40:609][ 74]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (214)
+[2016.09.30-13.26.40:610][ 74]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.09.30-13.26.40:610][ 74]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.09.30-13.26.40:610][ 74]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.09.30-13.26.40:610][ 74]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.09.30-13.26.40:610][ 74]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.09.30-13.26.40:612][ 74]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.09.30-13.26.40:612][ 74]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.09.30-13.26.40:612][ 74]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.09.30-13.26.41:044][ 74]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.09.30-13.26.41:044][ 74]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.09.30-13.26.41:044][ 74]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.09.30-13.26.41:045][ 74]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.09.30-13.26.41:046][ 74]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.09.30-13.26.41:680][ 74]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.09.30-13.26.41:681][ 74]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.09.30-13.26.41:682][ 74]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.09.30-13.26.41:722][ 74]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.09.30-13.26.41:723][ 74]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.09.30-13.26.41:930][ 74]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.09.30-13.26.41:930][ 74]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.09.30-13.26.41:931][ 74]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.09.30-13.26.41:932][ 74]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.09.30-13.26.41:933][ 74]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.09.30-13.26.41:933][ 74]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.09.30-13.26.41:935][ 74]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.09.30-13.26.41:937][ 74]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.09.30-13.26.41:937][ 74]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.09.30-13.26.42:037][ 74]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.09.30-13.26.42:038][ 74]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.09.30-13.26.42:043][ 74]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.09.30-13.26.42:045][ 74]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.09.30-13.26.48:971][ 74]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.09.30-13.26.48:971][ 74]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.09.30-13.26.48:971][ 74]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.09.30-13.26.48:971][ 74]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.09.30-13.26.49:060][ 74]LogDerivedDataCache: Shutdown
+[2016.09.30-13.26.49:060][ 74]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.09.30-13.26.49:060][ 74]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.09.30-13.26.49:060][ 74]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.09.30-13.26.49:060][ 74]LogModuleManager: Shutting down and 
